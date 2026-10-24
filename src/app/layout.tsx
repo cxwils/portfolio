@@ -4,7 +4,7 @@ import "./globals.css";
 import { profile } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: `${profile.name} | ${profile.role}`,
+  title: "Christian Wilsey",
   description: profile.intro,
 };
 
