@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #000000;
+  --ink: #ffffff;
+  --muted: #c9c9c9;
+  --rule: #262626;
+  --garnet: #e08a9e;
+  --gold: #ceb888;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0f1115;
+    --ink: #eceef2;
+    --muted: #9aa1ae;
+    --rule: #262a33;
+    --garnet: #e08a9e;
+    --gold: #ceb888;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-garnet: var(--garnet);
+  --color-gold: var(--gold);
+  --font-sans: "Schibsted Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--garnet);
+  color: #fff;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--garnet);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Project preview panels pick light or dark tint from the OS theme. */
+.preview {
+  background: var(--tint-light);
+  color: var(--ink-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  .preview {
+    background: var(--tint-dark);
+    color: var(--ink-dark);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
