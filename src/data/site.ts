@@ -1,17 +1,10 @@
-// ─────────────────────────────────────────────────────────────
-// Everything on the site comes from this file.
-// Edit the text here and the pages update. Fields marked TODO
-// are empty on purpose: empty links are simply not shown.
-// ─────────────────────────────────────────────────────────────
 export type Project = {
   slug: string;
   title: string;
-  role: string; // "Solo project", "Course project", ...
+  role: string; 
   year: string;
   summary: string;
   tags: string[];
-  // Drop a screenshot in /public/projects and set e.g. "/projects/otaku-score.png".
-  // Without an image, the card shows the title set large on a tinted panel.
   image?: string;
   tint: { light: string; dark: string; ink: { light: string; dark: string } };
   links: { label: string; href: string }[];
@@ -25,7 +18,7 @@ export type Entry = {
 };
 
 export const profile = {
-  name: "Hi, I'm Christian!", // TODO: add your last name, e.g. "Christian Smith"
+  name: "Hi, I'm Christian!", 
   photo: "/profile.jpg",
   role: "Aspiring Software Engineer",
   location: "Ormond Beach, Florida",
@@ -124,9 +117,9 @@ export const projects: Project[] = [
       " A Linux kernel module focused on synchronization and resource management, using mutexes and /proc interfaces",
     tags: ["C"],
     tint: {
-      light: "#929292",
-      dark: "#332D18",
-      ink: { light: "#fbfbf8", dark: "#EBDFA6" },
+      light: "#E5E5E5",
+      dark: "#262626",
+      ink: { light: "#404040", dark: "#D4D4D4" },
     },
     links: [
       { label: "Repository", href: "https://github.com/cxwils/project-2-project-2-group-21" },
