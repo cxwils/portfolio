@@ -1,6 +1,15 @@
 import { EntryList } from "@/components/EntryList";
+import { Interests } from "@/components/Interests";
 import { ProjectCard } from "@/components/ProjectCard";
-import { now, previously, profile, projects } from "@/data/site";
+import { TravelGallery } from "@/components/TravelGallery";
+import {
+  interests,
+  now,
+  previously,
+  profile,
+  projects,
+  travelPhotos,
+} from "@/data/site";
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
@@ -63,6 +72,7 @@ export default function Home() {
       <div className="mx-auto mt-16 grid max-w-2xl gap-10">
         <EntryList heading="Education" entries={now} />
         <EntryList heading="Experience" entries={previously} />
+         <Interests items={interests} />
       </div>
 
       <section aria-labelledby="projects" className="mt-24">
@@ -78,6 +88,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <TravelGallery photos={travelPhotos} />
     </main>
   );
 }

@@ -125,4 +125,26 @@ export const projects: Project[] = [
       { label: "Repository", href: "https://github.com/cxwils/project-2-project-2-group-21" },
     ],
   },
+  
+];
+export const interests: string[] = [
+  "Gym",
+  "Running",
+  "Anime and manga",
+  "Travel",
+  "PC Games",
+  "Tech",
+  "Cooking"
+];
+
+export type Photo = {
+  src: string;
+  alt: string; // describe the photo for screen readers
+  place: string; // caption shown on the photo
+};
+
+export const travelPhotos: Photo[] = [
+  { src: "/travel/japan.jpg", alt: "Describe the photo", place: "Tokyo, Japan" },
+  { src: "/travel/california.jpg", alt: "Describe the photo", place: "San Francisco, US" },
+  { src: "/travel/nyc.jpg", alt: "Describe the photo", place: "New York City, US" },
 ];
