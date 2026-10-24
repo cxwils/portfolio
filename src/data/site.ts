@@ -23,7 +23,7 @@ export const profile = {
   role: "Aspiring Software Engineer",
   location: "Ormond Beach, Florida",
   intro:
-    "I'm interested in fullstack and backend developement and current looking for open roles!",
+    "I'm interested in fullstack and backend developement and currently looking for roles!",
   links: [
     { label: "GitHub", href: "https://github.com/cxwils" }, // TODO: https://github.com/your-username
     { label: "LinkedIn", href: "https://www.linkedin.com/in/christian-wilsey-382b29308/?isSelfProfile=true" }, // TODO: https://www.linkedin.com/in/your-profile
@@ -38,7 +38,7 @@ export const now: Entry[] = [
     detail: "August 2024 to August 2026",
   },
   {
-    title: "Associate of Arts",
+    title: "A.A in General Studies",
     org: "Daytona State College",
     detail: "August 2022 to May 2024"
   },
