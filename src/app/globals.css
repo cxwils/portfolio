@@ -9,17 +9,6 @@
   --gold: #ceb888;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0f1115;
-    --ink: #eceef2;
-    --muted: #9aa1ae;
-    --rule: #262a33;
-    --garnet: #e08a9e;
-    --gold: #ceb888;
-  }
-}
-
 @theme inline {
   --color-paper: var(--paper);
   --color-ink: var(--ink);
@@ -53,7 +42,6 @@ a:focus-visible {
   border-radius: 2px;
 }
 
-/* Project preview panels pick light or dark tint from the OS theme. */
 .preview {
   background: var(--tint-light);
   color: var(--ink-light);
